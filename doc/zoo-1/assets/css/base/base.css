@@ -1,0 +1,23 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+
+img{max-width: 100%;}
+
+html{color: #555555;}
+
+html{font-family: "Helvetica";}
+
+
+p{
+line-height: 1.65;
+font-size: 1.05rem;
+}
+
+
+a{
+display: inline-block;
+text-decoration: none;
+}

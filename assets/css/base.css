@@ -1,0 +1,130 @@
+/**couleur
+    #042724 // vert foret
+     #c22727 // rouge **/
+
+/** police
+    -Titre: font-family: 'Anton', sans-serif;
+    -Autre: font-family: 'Radio Canada', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Radio Canada', sans-serif;
+    color: #555555;
+    max-width: 1700px;
+    margin:0 auto;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+    line-height: 1.25em;
+}
+p{
+    line-height: 1.4;
+    font-size: 1.05rem;
+    margin:20px 0;
+    max-width: 85ch;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+/*section*/
+section{
+    padding:60px 0;
+}
+section h2{
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+section h3{
+    font-size: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+/*section background*/
+.bgVert{
+    background-color: #042724;
+}
+.bgGrisPale{
+    background-color: #ececec;
+}
+section.bgVert > *{
+    color:#fff;
+}
+section.bgGrisPale > *{
+    color:#000;
+}
+section article a{
+    color:#555555;
+}
+section.bgVert article a{
+    color:#fff;
+}
+.item-center{
+    text-align:center;
+}
+.item-center p{
+    margin:20px auto;
+}
+.item-center h2{
+    max-width: 45ch;
+    margin:auto;
+}
+/*conteneur*/
+.conteneur{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.conteneur_entete{
+    margin-top: 140px;
+    margin-bottom: 100px;
+}
+.conteneur_principale {
+    margin-top: 100px;
+    display: flex;
+    gap:40px;
+}
+/*===========================================mediaquerie base et conteneur*/
+@media (max-width:790px){
+    section{
+        padding:5px 5px 20px 5px;
+    }
+    section:not(.bgVert) h2{
+        margin-top:40px;
+    }
+    section.bgVert{
+        padding-top:40px;
+    }
+    .item-center h2 {
+        font-size: 2.5em;
+    }
+}
+@media (max-width:500px){
+    section h2{
+        font-size: 40px;
+    }
+    section:not(.bgVert) h2{
+        margin-top:20px;
+    }
+    section.bgVert{
+        padding-top:20px;
+    }
+    .item-center h2 {
+        font-size: 2em;
+    }
+}
+
+
+
+    
+
+   

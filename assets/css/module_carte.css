@@ -1,0 +1,124 @@
+/********************************************************* module cartes**/
+.zone_carte{
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:40px;
+}
+.zone_carte article{
+    max-width: 325px; 
+    border:1px solid #ececec;
+    border-radius: 8px;
+}
+.zone_carte article a:hover{
+    opacity: 0.9;
+}
+.bgVert .zone_carte article{
+    border:1px solid #021412;
+}
+.zone_carte img{
+    width: 100%;
+    object-fit: cover;
+}
+.zone_carte img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.texte-zone_carte {
+    padding:20px 0; 
+}
+.texte-zone_carte {
+    padding:20px 20px 10px 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;   
+}
+.bgVert .texte-zone_carte {
+    background-color: #000;  
+}
+.bgGrisPale .texte-zone_carte {
+    background-color: #fff;  
+}
+.texte-zone_carte h4 {
+    font-size: 1.5em;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.zone_carte article:hover h4 {
+    border-bottom: 2px solid #c22727;
+}
+.texte-zone_carte p{
+    margin-top:5px;
+    line-height: 1.2em;
+}
+/*===================================mediaqueries module*/
+@media (max-width:1200px){
+    .zone_carte article {
+        max-width: 300px;
+    } 
+}
+@media (min-width:990px) and (max-width:1200px){
+    .texte-zone_carte {
+        min-height: 150px;
+    } 
+}
+@media (min-width:990px) and (max-width:1050px){
+    .zone_carte article {
+        max-width: 270px;
+    }
+}
+@media (max-width:990px){
+    .zone_carte{
+        justify-content: space-between;
+        gap:10px;
+    }
+    .zone_carte article {
+        max-width: 235px;
+    }
+    .texte-zone_carte {
+        min-height: 145px;  
+    }
+}
+@media (max-width:790px){
+     .zone_carte{
+        gap:5px;
+    }
+    .zone_carte article {
+        max-width: 210px;
+    }
+}
+@media (max-width:700px){
+     .zone_carte{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        align-items: center;
+        gap:20px;
+    }
+     .zone_carte article{
+        max-width: 450px;
+    }
+     .zone_carte article a{
+        display: block;
+    }
+    .zone_carte article img{
+        min-width: 100%;
+    }
+    .texte-zone_carte {
+        min-height: auto;  
+    } 
+}
+@media (max-width:500px){
+    .zone_carte div img{
+        object-position: 50% 20%;
+    }  
+}
+
+
+
+
+    
+
+   

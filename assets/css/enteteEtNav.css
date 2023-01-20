@@ -1,0 +1,139 @@
+/*============================================================entete de pages */
+.entete-page{
+    background-size: cover;
+    background-position: center top;
+    min-height: 50vh;
+    object-fit: cover;
+}
+.entete-page__titre {
+    color: white;
+    font-size: 5em;
+    margin-top: 45vh;
+}
+.entete-accueil{
+    background-image: url(../img/headerAccueil.jpg);
+}
+.entete-fiche-cougar{
+    background-image: url(../img/header-fiche-cougar.jpg);
+    background-position: right 60%;
+}
+.entete-portail{
+    background-image: url(../img/header-portail.jpg);
+    background-position: right bottom;
+}
+/*===================================================================navigation*/
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    gap:40px;
+}
+.navigation__logo {
+    width: 175px;
+}
+.navigation__conteneur{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    justify-items:center;
+    gap:40px;
+}
+.navigation__item{
+    font-size: 18px;
+    color: white;
+}
+.navigation__item:hover{
+    border-bottom: 2px solid  #c22727;
+}
+.navigation__item_rouge{
+    padding-bottom: 3px;
+    border-bottom: 2px solid  #c22727;
+}
+.navigation__icone {
+   width: 32.5px;
+}
+.navigation__bouton{
+    font-size: 20px;
+    color: white;
+}
+.navigation_mobile {
+    margin-top: 40px;
+    display:none;
+    background-color: rgba(0,0,0,0.5);
+    padding:40px 20px;
+    border-radius: 10px;
+}
+.navigation__bouton{
+    display: none;
+}
+.navigation_mobile_icone{
+    display: none;
+}
+/*===========================================mediaqueries pour entête et navigation*/
+@media (min-width:991px) and (max-width:1200px){
+    /* navigation */
+    .navigation{
+        flex-direction: column;
+        gap:20px;
+   }
+    .navigation__conteneur{
+        width: 100%;
+        justify-content: space-between;
+        background-color: rgba(0,0,0,0.5);
+        padding:20px;
+        gap:20px;
+   }
+}
+@media (max-width:990px) {
+    /* entete de pages */
+    .entete-page{
+        min-height: 40vh; 
+    }
+    .entete-accueil{
+        background-image: url(../img/headerAccueilMobile.jpg);
+    }
+    .entete-fiche-cougar{
+        background-image: url(../img/header-fiche-cougar-mobile.jpg);
+        background-position: 80% top;
+    }
+    .entete-portail{
+        background-image: url(../img/header-portail-mobile.jpg);
+        background-position: right bottom;
+    }
+    /* navigation */
+    .navigation{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+   .navigation__conteneur{
+        display: none;
+    }
+    .navigation_enabled {
+        display: flex;
+        flex-direction: column;
+        gap:40px;
+    }
+    .navigation__item:hover{
+        border-bottom: 0px;
+    }
+    .navigation_mobile_icone{
+        display: block;
+    }
+}
+@media (max-width:500px) {
+    /* entete de pages */
+    .entete-page{
+        min-height: 30vh; 
+    }
+    .entete-page__titre {
+        font-size: 3em;
+        margin-top: 25vh;
+    }
+    .navigation{
+        padding-top: 20px; 
+    }
+}
+    
+
+

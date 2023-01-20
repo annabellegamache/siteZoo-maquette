@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/enteteEtNav.css">
+    <link rel="stylesheet" href="assets/css/module_2col-txt-img.css">
+    <link rel="stylesheet" href="assets/css/module_carte.css">
+    <link rel="stylesheet" href="assets/css/piedDePage.css">
+    <!--JS-->
+    <script src="assets/js/nav.js"></script>
+    <title>Page d'accueil</title>
+</head>
+<body>
+    <!--ENTETE-->
+    <header class="entete-page entete-accueil">
+        <div class="conteneur">
+            <!--NAV-->
+            <nav class="navigation">
+                <a class="navigation__logo" href="#"><img src="assets/img/logo.svg" alt="logo zoo val-jalbert"></a>
+                <div class="navigation__conteneur">
+                    <a class="navigation__item" href="#">Informations</a>
+                    <a class="navigation__item" href="#">Achetez vos billets</a>
+                    <a class="navigation__item" href="#">Activités et évènements</a>
+                    <a class="navigation__item" href="#">Service aux écoles</a>
+                    <a class="navigation__item navigation__item_rouge" href="#">Devenez membre</a>
+                </div>
+                <!--NAV-MOBILE-->
+                <div class="navigation_mobile_icone">
+                    <img class="navigation__icone" src="assets/img/hamSvg.svg" alt="icone menu mobile">
+                </div>
+            </nav>
+            <nav class="navigation_mobile">
+                <a class="navigation__item" href="#">Informations</a>
+                <a class="navigation__item" href="#">Achetez vos billets</a>
+                <a class="navigation__item" href="#">Activités et évènements</a>
+                <a class="navigation__item" href="#">Service aux écoles</a>
+                <a class="navigation__item" href="#">Devenez membre</a>
+            </nav>
+            <h1 class="entete-page__titre">Bienvenue</h1>
+        </div>
+    </header>
+    <!--MAIN-->
+    <!--MODULE 2COL-TXT+IMG-->
+    <div class="conteneur">
+        <section class="flex-texte-image">
+            <article>
+                <h2>Le seul Zoo en forêt du Québec</h2>
+                <div class="titre-hero__info">
+                    <span class="titre-hero__meta">Actualités</span>
+                    <span class="titre-hero__meta" >Animaux</span>
+                </div>
+                <p>Découvrez tous les animaux auxquels vous aurez accès en vous baladant dans notre zoo en forêt.</p>
+                <p>Le Zoo de Val-Jalbert met en vedette les animaux québécois les plus sournois et ce, dans un décor forestier enchanteur.</p>
+                <p><b>Venez voir nos lynx et carcajous en liberté!</b></p>
+                <a  class="publication__bouton" href="#">Voir tous les animaux</a>
+            </article>
+            <div class="zoneImg">
+                <picture>
+                    <img src="assets/img/carcajou.jpg" alt="carcajou">
+                </picture>
+                <picture>
+                    <img src="assets/img/lynx.jpg" alt="lynx">
+                </picture>
+            </div>
+        </section>
+    </div>
+    <!--MODULE CARTES-->
+    <section class="bgVert">
+        <div class="conteneur">
+            <h2>Explorez!</h2>
+            <div class="titre-hero__info">
+                <span class="titre-hero__meta">Article</span>
+                <span class="titre-hero__meta" >Promotion</span>
+                <span class="titre-hero__meta">Membre</span>
+            </div>
+            <div class="zone_carte">
+                <article>
+                    <a href="#">
+                        <div>
+                            <img src="assets/img/village.jpg" alt="village val-jalbert">
+                        </div>
+                        <div class="texte-zone_carte">
+                            <h4>Article</h4>
+                            <p>Un village plein d'histoires!  Planifiez votre escapade</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <div>
+                            <img src="assets/img/membre.jpg" alt="membre du zoo">
+                        </div>
+                        <div class="texte-zone_carte">
+                            <h4>Promotion</h4>
+                            <p>Devenez membre et recevez un écusson de votre choix!</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <div>
+                            <img src="assets/img/cougar.jpg" alt="cougar">
+                        </div>
+                        <div class="texte-zone_carte">
+                            <h4>Animal</h4>
+                            <p>Le cougar, animal vedette, typiquement québecois!</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--MODULE 2COL-TXT+IMG-->
+    <div class="conteneur">
+        <section class="flex-texte-image">
+            <div class="zoneImg">
+                <picture>
+                    <img class="img-position-ajust" src="assets/img/route.jpg" alt="route">
+                </picture>
+                <picture>
+                    <img src="assets/img/balade.jpg" alt="balade">
+                </picture>
+            </div>
+            <article class="txtDroit">
+                <h2>À seulement 6 heures de Montréal et 30 minutes de Chicoutimi</h2>
+                <div class="titre-hero__info">
+                    <span class="titre-hero__meta">Faune</span>
+                    <span class="titre-hero__meta" >Tendances</span>
+                </div>
+                <p>Observez la faune dans la partie pédestre ou dans le Parc des sentiers de la nature à bord de notre train grillagé où les animaux sont en liberté et le visiteur, en cage.</p>
+                <a  class="publication__bouton" href="#">Voir la carte</a>
+            </article>
+        </section>
+    </div>
+    <!--MODULE CARTES-->
+    <section class="bgGrisPale">
+        <div class="conteneur">
+            <h2>En apprendre plus sur nous!</h2>
+            <div class="titre-hero__info">
+                <span class="titre-hero__meta">Actualités</span>
+                <span class="titre-hero__meta" >Promotion</span>
+            </div>
+            <div class="zone_carte">
+                <article>
+                    <a href="#">
+                        <div>
+                            <img src="assets/img/famille2.jpg" alt="zoo famille">
+                        </div>
+                        <div class="texte-zone_carte">
+                            <h4>Découvrir</h4>
+                            <p>Planifiez votre escapade !  Voir nos activités familiales au zoo et aux alentours</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <div>
+                            <img src="assets/img/promotion.jpg" alt="enfant promotion zoo">
+                        </div>
+                        <div class="texte-zone_carte">
+                            <h4>Promotion</h4>
+                            <p>Ne manquer pas cette offre.  Obtenez un accès privilégié et illimité pour 20 $ par année.</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <div>
+                            <img src="assets/img/ours.jpg" alt="ours">
+                        </div>
+                        <div class="texte-zone_carte">
+                            <h4>Article</h4>
+                            <p>Contribuez à l’essor de l’ours noir. Voir notre programme de survie solitaire</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--MODULE 2COL-TXT+IMG-->
+    <div class="conteneur">
+        <section class="flex-texte-image">
+            <article>
+                <h2>Aidez-nous à préserver la faune québécoise et sournoise</h2>
+                <div class="titre-hero__info">
+                    <span class="titre-hero__meta">Actualités</span>
+                    <span class="titre-hero__meta" >Tenddances</span>
+                </div>
+                <p>Fiers protecteurs de notre patrimoine faunique, nous contribuons à l’essor et à la protection des animaux du Quebec depuis plus de 70 ans.</p>
+                <p><b>Découvrez nos initiatives de protection du caribou.</b>
+                </p>
+                <a  class="publication__bouton" href="#">Découvrir</a>
+            </article>
+            <div class="zoneImg zoneGrandeImg">
+                <picture>
+                    <source media="(max-width:500px)" srcset="assets/img/caribou-mobile.jpg">
+                    <img class="grandeImg" src="assets/img/caribou.jpg" alt="caribou">
+                </picture> 
+            </div>
+        </section>
+    </div>
+   <!--FOOTER-->
+    <footer>
+        <div class="conteneur conteneur_piedDePage">
+            <a class="navigation__logo" href="#"><img src="assets/img/logo.svg" alt="logo zoo val-jalbert"></a>
+            <div class="conteneur_piedDePage_info">
+                <a class="piedDePage__item piedDePage__item_info" href="#">
+                    <span>2123, Rue Saint-George, Chambord, QC G0W 1G0</span>
+                </a>
+                <a class="piedDePage__item piedDePage__item_info" href="#">
+                514 555-5555
+                </a>
+                <a class="piedDePage__item piedDePage__item_info" href="#">
+                    info@valjalbert.com
+                </a>
+            </div>
+            <div class="conteneur_piedDePage_lien">
+                <div class="piedDePage__conteneur">
+                    <a class="piedDePage__item" href="#">À propos</a>
+                    <a class="piedDePage__item" href="#">Equipe</a>
+                    <a class="piedDePage__item" href="#">Partenaires</a>
+                </div>
+                <div class="piedDePage__conteneur">  
+                    <a class="piedDePage__item" href="#">Carrières</a>
+                    <a class="piedDePage__item" href="#">Contact</a>
+                    <a class="piedDePage__item" href="#">Programme éducatif</a>
+                </div>    
+                <div class="piedDePage__conteneur">
+                    <a class="piedDePage__item" href="#">Préserver la faune sournoise</a>
+                    <a class="piedDePage__item" href="#">Initiatives de libération</a>
+                    <a class="piedDePage__item" href="#">Parrainez un animal</a>
+                </div>
+                <div class="piedDePage__conteneur">
+                    <a class="piedDePage__item" href="#">Faire un don</a>
+                    <a class="piedDePage__item " href="#"> Politique de confidentialité</a>
+                    <a class="piedDePage__item " href="#">Politique d'accessibilité</a>
+                </div>
+            </div>
+        </div>  
+    </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+footer {
+    background-image: url(../img/footer_bg.jpg);
+    background-color: #000;
+    background-size: cover;
+    background-position: center top;
+    padding:80px 0;
+}
+.conteneur_piedDePage{
+    display: flex;
+    justify-content:space-between;
+    gap:20px;
+}
+.conteneur_piedDePage .navigation__logo{
+    margin-right:40px;
+}
+.conteneur_piedDePage_info{
+    text-transform:uppercase;
+    margin-right: 40px;
+}
+.conteneur_piedDePage_lien{
+    display: flex;
+    gap:40px;
+}
+.piedDePage__item {
+    display: block;
+    color: aliceblue;
+    line-height: 1.2em;
+}
+.piedDePage__item {
+    margin-bottom: 15px; 
+}
+/*===========================================mediaqueries pour pied de page */
+@media (max-width:1200px){
+    .conteneur_piedDePage{
+        flex-direction: column;  
+    } 
+}
+@media (max-width:780px){
+    footer {
+        background-image: url(../img/footer_mobile.jpg);
+    }
+    .conteneur_piedDePage{
+        align-items:flex-start;
+    }
+    .conteneur_piedDePage_info{
+        text-align: left;
+    }
+    .conteneur_piedDePage_lien{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap:0;
+    }
+    .conteneur_piedDePage_lien .piedDePage__conteneur {
+        width: calc(50% - 40px);
+    } 
+}
+

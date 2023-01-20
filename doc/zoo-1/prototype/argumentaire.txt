@@ -1,0 +1,34 @@
+Zoo:
+
+Le mandat dans le cadre de ce projet consiste dans la création d’un siteweb pour un zoo. Dans ce contexte, il apparaissait judicieux d’exploiter plus les images.
+
+
+Les choix plus important general:
+
+- une distance de 50px entre un section et l'autre
+- la plus part j'utilise du flexbox
+- J'ai stylisé le bouton et <a> avec un motif unique et un effet de zoom avec hover.
+- <p> taille 14 px
+- h1 taille de 50 px
+- um menu en haut et le reste du menu au pied de page
+
+Acuueil:
+
+- Le type de zoo et la distance étaient selon moi les points les plus importants à commencer sur la page d'accueil. Viennent ensuite des petits articles généraux qui donnent un aperçu de ce qui se passe en ce moment au zoo, puis une bannière publicitaire et à la fin la possibilité de choisir si vous souhaitez devenir membre ou aller visiter en famille.
+
+Portail:
+
+- Cela commence par une grande image de titre, car je pense que les images sont la porte d'entrée de ce type de site. Viennent ensuite les animaux en vedette dans un format plus grand et juste en dessous tous les autres animaux dans des formats plus petits. Une bannière de publicités du zoo et la possibilité de choisir par types à la fin.
+
+- J'ai choisi d'ajouter plus de photos au portail car j'imaginais que c'était la page d'appel des animaux et rien de mieux que de voir la photo de l'animal en question. A aussi une proposition différente de la page d'accueil et un design plus arrondi pour se différencier.
+
+Fiche:
+
+- Dans le fiche, j'ai trouvé intéressant de commencer par une curiosité sur l'animal car c'est une partie intéressante qui peut attirer l'attention de l'utilisateur avec la photo. Viennent ensuite une description générale et une galerie d'images de l'animal sélectionné dans le fiche et sur le côté droit des publicités d'autres événements du zoo. Terminer par une banner appelant un animal en vedette.
+
+Footer:
+
+- une option de un deuxieme menu avec des choses que je trouve moins importants.
+
+
+

@@ -1,0 +1,135 @@
+/******************************************module section 2 colonne texte + images*/
+.flex-texte-image{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    gap:40px;
+}
+.flex-texte-image article{
+    max-width: 70ch;
+}
+.flex-texte-image article p{
+    max-width: 50ch;
+}
+.titre-hero__info{
+    margin-bottom:40px;
+}
+.titre-hero__info span {
+    padding-bottom: 3px;
+    margin-left: 3px;
+    border-bottom: 2px solid  #c22727;
+    cursor: pointer;
+}
+.publication__bouton { 
+    background-color:  #c22727;
+    color: white;
+    padding: 12.5px;
+    border-radius: 5px;
+}
+.publication__bouton:hover{ 
+    background-color: #042724;
+}
+article a.publication__bouton{
+    margin:40px 0
+}
+.zoneImg{
+    display: flex;
+    gap:5px;
+}
+.zoneImg picture{
+    overflow: hidden;
+}
+.zoneImg picture img{
+    width:450px;
+    height: 500px;
+    object-fit: cover;
+}
+.zoneGrandeImg picture img.grandeImg {
+    width: 100%;
+}
+/*===================================mediaqueries module*/
+@media (max-width:1200px){
+    .zoneImg{
+        flex-direction: column;
+    }
+    .zoneImg  picture img{
+        height: 320px;
+        object-position:0% 40%;
+    }
+    .zoneImg  picture .img-position-ajust{
+        object-position:0% 100%;
+    }
+    .zoneGrandeImg  picture img.grandeImg{
+        height: 500px;
+    }
+}
+@media (min-width:990px) and (max-width:1200px){
+    .flex-texte-image article{
+        max-width: 60ch;
+    }
+    .zoneImg  picture{ 
+        max-height: 220px;
+    } 
+    .zoneGrandeImg  picture{ 
+        max-height: 500px;
+    }
+}
+@media (max-width:990px){
+    .flex-texte-image article{
+        max-width: 40ch;
+    }
+    .flex-texte-image{
+        align-items: flex-start;
+    }
+    .titre-hero__info{
+        margin-bottom: 40px;
+    }
+    .zoneImg  picture{ 
+        max-height: 268px;
+    }
+    .zoneGrandeImg  picture{ 
+        max-height: 500px;
+    }
+    .zoneGrandeImg  picture img{ 
+        object-position: 50% 50%;
+    }
+}
+@media (max-width:790px){
+    .flex-texte-image{
+        flex-direction: column;
+        gap:0;
+    }
+    .flex-texte-image article{
+        max-width: 80ch;
+    }
+    .zoneImg{ 
+        flex-direction: row;
+    }
+    .zoneImg  picture img{
+        object-position:50% 40%;
+    }
+    .txtDroit h2{
+        margin-top:40px;
+    }
+    .zoneGrandeImg { 
+       text-align: center;
+    }
+    .zoneGrandeImg picture {
+        width: 100%;
+    }
+}
+@media (max-width:500px){
+    .zoneImg{ 
+        flex-direction:column;
+    }
+    section:not(.bgVert) h2 {
+        margin-top: 40px;
+    }   
+}
+
+
+
+
+    
+
+   

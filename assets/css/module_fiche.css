@@ -1,0 +1,128 @@
+/******************************************module fiche*/
+.zone_fiche_conteneur{
+    display: flex;
+    align-items: center;
+    gap:40px;  
+}
+.zone_fiche-details{ 
+   flex-grow: 1;
+   max-width: 100ch;
+}
+.zone_fiche-details details {
+    padding:10px;
+	margin: 5px auto;
+	max-width: 100%;
+	background: #ffffff;
+    border: 1px solid #ececec;
+	border-radius: 8px;
+}
+.zone_fiche-details summary:hover{
+    cursor:pointer
+}
+.zone_fiche-details details summary::marker{
+    content: url(../img/arrow-down.svg);  
+}
+.zone_fiche-details details[open] summary::marker{
+    content: url(../img/arrow-up.svg);
+}
+.zone_fiche-details summary span{
+    max-width: fit-content;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5em;
+}
+.zone_fiche-details summary+div{
+    padding:20px 30px;
+}
+.zone_fiche-details summary+div p{
+    margin:5px 0;
+}
+.zone_fiche-aside{
+   width:40%;
+}
+.zone_fiche-aside .txtDroit h2{
+    font-size: 2em;
+}
+.zone_fiche-aside a.publication__bouton {
+    margin:0 0 40px 0;
+}
+/*zone galerie photo*/ 
+.zone_fiche-galerie {
+    display: flex;
+    flex-wrap: wrap;
+    gap:4px;
+}    
+.galerie-col{
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+.galerie-col div{
+    width: 100%;
+    margin: 2px;
+}
+.galerie-imgPetite{
+    height: 30vh
+}
+.galerie-imgGrande{
+    height: 60vh
+}
+.galerie-col div img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}        
+.zone_fiche-aside img{
+    display:none;
+ }      
+/*===================================mediaqueries module*/
+@media (max-width:990px){
+    .zone_fiche_conteneur{
+        flex-direction: column;
+        align-items:flex-start;
+        gap: 0;
+    }
+    .zone_fiche-details{ 
+        max-width: auto;
+     }
+    .zone_fiche-aside{
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        padding:40px 0;
+        gap:40px;
+     }
+     .zone_fiche-aside img{
+        display: block;
+        max-width:50%;
+        height: 100%;
+        object-fit: cover;
+     }
+}
+@media (max-width:790px){
+    .zone_fiche-aside{
+        flex-direction: column;
+        padding:0;
+     }
+     .zone_fiche-aside img{
+        max-width:100%;    
+     }
+     .zone_fiche-aside article.txtDroit h2{
+        margin-top:20px;   
+     }
+     .zone_fiche-aside a.publication__bouton {
+        margin: 0;
+    }
+    
+}
+@media (max-width:600px){
+    .galerie-col{
+        width: 100%;
+    }
+}
+
+
+
+
+    
+
+   

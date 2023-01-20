@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/enteteEtNav.css">
+    <link rel="stylesheet" href="assets/css/module_2col-txt-img.css">
+    <link rel="stylesheet" href="assets/css/module_filtre.css">
+    <link rel="stylesheet" href="assets/css/module_carte.css">
+    <link rel="stylesheet" href="assets/css/piedDePage.css">
+    <!--JS-->
+    <script src="assets/js/nav.js"></script>
+    <title>Portail</title>
+</head>
+<body>
+    <!--ENTETE-->
+    <header class="entete-page entete-portail">
+        <div class="conteneur">
+            <!--NAV-->
+            <nav class="navigation">
+                <a class="navigation__logo" href="#"><img src="assets/img/logo.svg" alt="logo zoo val-jalbert"></a>
+                <div class="navigation__conteneur">
+                    <a class="navigation__item" href="#">Informations</a>
+                    <a class="navigation__item" href="#">Achetez vos billets</a>
+                    <a class="navigation__item" href="#">Activités et évènements</a>
+                    <a class="navigation__item" href="#">Service aux écoles</a>
+                    <a class="navigation__item navigation__item_rouge" href="#">Devenez membre</a>
+                </div>
+                <!--NAV-MOBILE-->
+                <div class="navigation_mobile_icone">
+                    <img class="navigation__icone" src="assets/img/hamSvg.svg" alt="icone menu mobile">
+                </div>
+            </nav>
+            <nav class="navigation_mobile">
+                <a class="navigation__item" href="#">Informations</a>
+                <a class="navigation__item" href="#">Achetez vos billets</a>
+                <a class="navigation__item" href="#">Activités et évènements</a>
+                <a class="navigation__item" href="#">Service aux écoles</a>
+                <a class="navigation__item" href="#">Devenez membre</a>
+            </nav>
+            <h1 class="entete-page__titre">Nos animaux</h1>
+        </div>
+    </header>
+    <!--MAIN-->
+    <!--MODULE CENTRER-->
+    <section class="bgVert">
+    <div class="conteneur item-center">
+                <h2>Découvrez tous les animaux auxquels vous aurez accès en vous baladant dans notre zoo en forêt</h2>
+        </div>
+    </section>
+    <!--MODULE CARTES-->
+    <section class="bgGrisPale">
+        <div class="conteneur">
+            <h2>Animaux en vedette</h2>
+            <div class="titre-hero__info">
+                <span class="titre-hero__meta">Animaux</span>
+                <span class="titre-hero__meta" >Tendances</span>
+            </div>
+            <div class="zone_carte">
+                <article>
+                    <a href="#">
+                        <div>
+                            <img src="assets/img//carcajou.jpg" alt="carcajou">
+                        </div>
+                        <div class="texte-zone_carte">
+                            <h4>Le carcajou</h4>
+                            <p>Le Glouton ou Carcajou, est un mammifère au régime alimentaire omnivore à dominance carnivore.</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <div>
+                            <img src="assets/img/ours2.jpg" alt="ours noir">
+                        </div>
+                        <div class="texte-zone_carte">
+                            <h4>L'ours noir</h4>
+                            <p>L’Ours noir, aussi appelé baribal, est l’ours le plus commun en Amérique du Nord.</p>
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <div>
+                            <img src="assets/img/lynx.jpg" alt="lynx">
+                        </div>
+                        <div class="texte-zone_carte">
+                            <h4>Le lynx</h4>
+                            <p>Les lynx sont aisément reconnaissables à leur face ornée de favoris</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--MODULE 2COL-TXT+IMG-->
+    <div class="conteneur">
+        <section>
+            <h2>Découvrez les tous!</h2>
+            <div class="titre-hero__info">
+                <span class="titre-hero__meta">Filtrer par type d'animaux</span>
+            </div>
+            <div class="zone_filtre">
+                <!-- inspirer par le tutoriel https://medium.com/allenhwkim/how-to-build-tabs-only-with-css-844718d7de2f-->
+                <input type="radio" name="tabs" id="tab1" checked />
+                <label for="tab1">Amphibien</label>
+                <input type="radio" name="tabs" id="tab2" />
+                <label for="tab2">Oiseau</label>
+                <input type="radio" name="tabs" id="tab3" />
+                <label for="tab3">Canin</label>
+                <input type="radio" name="tabs" id="tab4" />
+                <label for="tab4">Félin</label>
+                <input type="radio" name="tabs" id="tab5" />
+                <label for="tab5">Mustélidé</label>
+                <div class="tab content1">
+                    <h3>Amphibien</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum illo iure, eveniet consequuntur provident ad eligendi quisquam magni accusantium temporibus at inventore asperiores dignissimos. Temporibus cumque unde id asperiores! </p>
+                    <p><b>Cliquer sur l'animal pour voir sa fiche</b></p>
+                    <div class="zone_portail-galerie">
+                        <a href="#"><img src="assets/img/amphibien1.jpg" alt="salamandre"></a>
+                        <a href="#"><img src="assets/img/amphibien2.jpg" alt="tortue"></a>
+                    </div> 
+                </div>
+                <div class="tab content2">
+                    <h3>Oiseau</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum illo iure, eveniet consequuntur provident ad eligendi quisquam magni accusantium temporibus at inventore asperiores dignissimos. Temporibus cumque unde id asperiores! </p>
+                    <div class="zone_portail-galerie">
+                        <a href="#"><img src="assets/img/oiseau1.jpg" alt="hibou"></a>
+                        <a href="#"><img src="assets/img/oiseau2.jpg" alt="aigle"></a>
+                    </div> 
+                </div>
+                <div class="tab content3">
+                    <h3>Canin</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum illo iure, eveniet consequuntur provident ad eligendi quisquam magni accusantium temporibus at inventore asperiores dignissimos. Temporibus cumque unde id asperiores! </p>
+                    <div class="zone_portail-galerie">
+                        <a href="#"><img src="assets/img/canin1.jpg" alt="loup"></a>
+                        <a href="#"><img src="assets/img/canin2.jpg" alt="renard"></a>
+                    </div> 
+                </div>
+                <div class="tab content4">
+                    <h3>Félin</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum illo iure, eveniet consequuntur provident ad eligendi quisquam magni accusantium temporibus at inventore asperiores dignissimos. Temporibus cumque unde id asperiores! </p>
+                    <div class="zone_portail-galerie">
+                        <a href="#"><img src="assets/img/felin1.jpg" alt="lynx"></a>
+                        <a href="#"><img src="assets/img/felin2.jpg" alt="cougar"></a>
+                    </div> 
+                </div>
+                <div class="tab content5">
+                    <h3>Mustélidé</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis illum illo iure, eveniet consequuntur provident ad eligendi quisquam magni accusantium temporibus at inventore asperiores dignissimos. Temporibus cumque unde id asperiores! </p>
+                    <div class="zone_portail-galerie">
+                        <a href="#"><img src="assets/img/mustelide1.jpg" alt="carcajou"></a>
+                        <a href="#"><img src="assets/img/mustelide2.jpg" alt="castor"></a>
+                    </div> 
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--MODULE 2COL-TXT+IMG-->
+    <section class="bgGrisPale">
+        <div class="conteneur flex-texte-image">
+            <article>
+                <h2>Parrainez un cougar</h2>
+                <div class="titre-hero__info">
+                    <span class="titre-hero__meta">Dons</span>
+                    <span class="titre-hero__meta" >Parrainage</span>
+                </div>
+                <p>Chaque parrainage permet à un cougar de retouver sa liberté dans nos forêts québécoises</p>
+                <a  class="publication__bouton" href="#">Voir nos modèles de parrainage</a>
+            </article>
+            <div class="zoneImg zoneGrandeImg">
+                <picture>
+                    <source media="(max-width:500px)" srcset="assets/img/cougar6-mobile.jpg">
+                    <img class="grandeImg" src="assets/img/cougar6.jpg" alt="couguar">
+                </picture> 
+            </div>
+        </div>
+    </section>
+   <!--FOOTER-->
+    <footer>
+        <div class="conteneur conteneur_piedDePage">
+            <a class="navigation__logo" href="#"><img src="assets/img/logo.svg" alt="logo zoo val-jalbert"></a>
+            <div class="conteneur_piedDePage_info">
+                <a class="piedDePage__item piedDePage__item_info" href="#">
+                    <span>2123, Rue Saint-George, Chambord, QC G0W 1G0</span>
+                </a>
+                <a class="piedDePage__item piedDePage__item_info" href="#">
+                514 555-5555
+                </a>
+                <a class="piedDePage__item piedDePage__item_info" href="#">
+                    info@valjalbert.com
+                </a>
+            </div>
+            <div class="conteneur_piedDePage_lien">
+                <div class="piedDePage__conteneur">
+                    <a class="piedDePage__item" href="#">À propos</a>
+                    <a class="piedDePage__item" href="#">Equipe</a>
+                    <a class="piedDePage__item" href="#">Partenaires</a>
+                </div>
+                <div class="piedDePage__conteneur">  
+                    <a class="piedDePage__item" href="#">Carrières</a>
+                    <a class="piedDePage__item" href="#">Contact</a>
+                    <a class="piedDePage__item" href="#">Programme éducatif</a>
+                </div>    
+                <div class="piedDePage__conteneur">
+                    <a class="piedDePage__item" href="#">Préserver la faune sournoise</a>
+                    <a class="piedDePage__item" href="#">Initiatives de libération</a>
+                    <a class="piedDePage__item" href="#">Parrainez un animal</a>
+                </div>
+                <div class="piedDePage__conteneur">
+                    <a class="piedDePage__item" href="#">Faire un don</a>
+                    <a class="piedDePage__item " href="#"> Politique de confidentialité</a>
+                    <a class="piedDePage__item " href="#">Politique d'accessibilité</a>
+                </div>
+            </div>
+        </div>  
+    </footer>
+</body>
+</html>

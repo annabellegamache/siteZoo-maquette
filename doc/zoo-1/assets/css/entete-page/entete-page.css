@@ -1,0 +1,32 @@
+.entete-page{
+    background-color: #364A4C;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+}
+
+.entete-page__titre {
+    color: white;
+    font-size: 45px;
+    letter-spacing: -0.15rem;
+}
+
+
+@media (min-width:781px) and (max-width:1049px) {
+    .entete-page__titre{
+        font-size: 65px;
+        margin-top: 80px;
+    }
+}
+@media (min-width:1050px){
+    .entete-page__titre{
+        font-size: 80px;
+        margin-top: 200px;
+    }
+}
+
+@media (max-width:780px) {
+    .entete-page__titre{
+        margin-top: 50px;
+    }
+}

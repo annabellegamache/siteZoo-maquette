@@ -1,0 +1,43 @@
+.titre-hero__titre {
+font-size: 35px;
+}
+
+.titre-hero {
+margin-top: 20px;
+margin-bottom: 30px;
+}
+
+.titre-hero__meta {
+padding-bottom: 3px;
+border-bottom: 2px solid red;
+cursor: pointer;
+}
+.titre-hero__info {
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+@media (max-width:1000px){
+.titre-hero {max-width:50ch;}
+}
+
+@media (max-width:780px) {
+.titre-hero_large {display: none;}
+.titre-hero_article{
+    display: none;
+}
+}
+
+
+
+@media (min-width:781px) {
+.titre-hero_mobile {display: none;}
+.titre-hero_large {max-width: 65ch;}
+    .titre-hero__titre_large {
+    font-size: 50px;
+    }
+    .titre-hero_article{
+        max-width: 100ch;   
+    }
+}
+

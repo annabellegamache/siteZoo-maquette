@@ -1,0 +1,78 @@
+/******************************************module filtre*/
+.zone_filtre{
+    max-width: 90ch;
+    margin:0 auto;
+}
+.zone_filtre input{ 
+    display: none; 
+}               
+.zone_filtre label{ 
+    display: inline-block;
+    cursor: pointer;
+    background-color: #c22727;
+    color: white;
+    padding: 12.5px;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    top: 1px; 
+} 
+.zone_filtre .tab{ 
+    display: none 
+}          
+/* display le contenu quand checked*/
+#tab1:checked ~ .tab.content1,
+#tab2:checked ~ .tab.content2,
+#tab3:checked ~ .tab.content3,
+#tab4:checked ~ .tab.content4,
+#tab5:checked ~ .tab.content5{ 
+    display: block; 
+}
+.zone_filtre input:checked + label {    
+    background-color: #042724;
+}
+.zone_filtre .tab {          
+    border: 1px solid #ececec;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+}
+.zone_portail-galerie img{
+    display: inline-block;
+    width: 42ch;
+    padding-bottom:4px;
+    border-bottom :2px solid #c22727;
+    max-height: 230px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+.zone_portail-galerie img:hover{
+    opacity:0.5;
+}
+.zone_portail-galerie a{
+    position:relative;
+}
+.zone_portail-galerie a:after{
+    margin:4rem;
+    content: "Voir sa fiche";
+    position: absolute;
+    color: #c22727;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/*===================================mediaqueries module*/
+@media (max-width:500px){
+    .zone_filtre label{ 
+        display: block;
+        width: auto;
+        border-radius: 5px;
+        margin-bottom:5px;
+        text-align: center;  
+    } 
+}
+
+
+
+
+    
+
+   
